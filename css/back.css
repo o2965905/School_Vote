@@ -1,0 +1,260 @@
+/* 後台專用的css */
+
+/*-------------------- 中間廣告區 --------------------*/
+#aside{
+    height: 5%;
+}
+#section{
+    height: 5%;
+}
+
+/*--------------------- Form表單 ---------------------*/
+form{
+    margin: 20px;
+    margin-left: 40px;
+    /* color: #464646; */
+    color: #126e7d;
+    letter-spacing: 2px;
+    /* font-weight:bold; */
+    font-size: large;
+}
+.footer_page{ /*分頁*/
+    /* height: 28px; */
+    /* line-height: 28px; */
+    line-height: 18px;
+    /* font-size: 12px; */
+    font-size: 15px;
+    color: #464646;
+    padding: 0 8px;
+    margin: 0 10px;
+    text-align: center;
+    /* background-color: lightyellow; */
+    /* border-radius: 4px; */
+    /* border: 1px solid #e0e0e0; */
+}
+.footer_page a{
+    float: none;
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #464646;
+    border: 1px solid #D9D9D9;
+    /* background-color: #e0e0e0; */
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+.footer_page a:hover{
+    background-color: #148aa4;
+    color: #FFFFFF;
+}
+
+/* .btn{
+    cursor: pointer;
+} */
+.btn.btn-primary{ /*新增選項-按鈕*/
+    background-color: #2fa6a0;
+    margin: 3.5px;
+    margin-top: 7px;
+}
+.btn.btn-warning{ /*送出 & 編輯-按鈕*/
+    background-color: #FF8B2C;
+    margin: 3.5px;
+}
+.btn.btn-danger{ /*刪除-按鈕*/
+    background-color: #F26262;
+    margin: 3.5px;
+}
+
+/*-------------------- 列表標題列表 --------------------*/
+#date_type{ /*分類按鈕*/
+    margin-left: 15px;
+}
+#date_type select{ /*分類按鈕-選項設定*/
+    font-size: 20px;
+    color: #148aa4;
+    border: 1px solid #ccc;
+    border-bottom: 3px solid tomato;
+    border-radius: 3px;
+}
+.title{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #51A1B4;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+}
+.No1{ /*投票主題*/
+    /* border-left: 1px solid rgba(255, 255, 255, 0.15); */
+    width: 40%;
+}
+.No2{ /*剩餘天數*/
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    width: 15%;
+    text-align: center;
+}
+.No3{ /*投票人數*/
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    width: 15%;
+    text-align: center;
+}
+.No4{ /*操作*/
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    width: 20%;
+}
+
+/*-------------------- 投票主題呈現 --------------------*/
+ul{
+    margin: 1px 10px 30px 10px;
+}
+.back_items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.back_items:nth-child(odd){ /*投票主題-基數*/
+    max-width: 100%;
+    margin: 1%;
+    /* padding: 10px; */
+    padding: 2.5%;
+    padding-top: 1%;
+    /* padding-left: 3%; */
+    padding-left: 2%;
+    background-color: #f9f9f9;
+    color: #464646;
+    font-weight: bold;
+}
+.back_items:nth-child(even){ /*投票主題-偶數*/
+    max-width: 100%;
+    margin: 1%;
+    /* padding: 10px; */
+    padding: 2.5%;
+    padding-top: 1%;
+    /* padding-left: 3%; */
+    padding-left: 2%;
+    background-color: #fff;
+    color: #464646;
+    font-weight: bold;
+}
+.back_items:hover{ /*投票主題-hover效果*/
+    background-color: #FFFFDD;
+    /* box-shadow: 10px 10px 10px -5px #ccc; */
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    color: #117096;
+    cursor: pointer;
+}
+
+/*------------------- 編輯 & 刪除按鈕 -------------------*/
+.edit{
+    display: inline-block;
+    /* padding: 3px 12px; */
+    margin: 5px;
+    /* margin-bottom: -1%; */
+    margin-left: 40%;
+    background-color: #eee;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #cf6f6f;
+}
+.del{
+    display: inline-block;
+    /* padding: 3px 12px;   */
+    margin: 5px;
+    margin-right: -5px;
+    /* margin-bottom: -1%; */
+    background-color: #eee;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #cf6f6f;
+}
+.edit:hover{
+    background-color: rgb(120, 161, 163);
+    color: #fff;
+}
+.del:hover{
+    background-color: rgb(234, 171, 171);
+    color: #fff;
+}
+
+/*------------------- 編輯 & 新增畫面 -------------------*/
+.add_form{
+    margin-top: 3.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    border: 1px solid #ccc;
+    border-radius: 1%;
+    /* box-shadow: 0px 2px 4px rgb(0 0 0 / 33%); */
+}
+.add_form label{
+    /* margin: 5px; */
+    margin-left: 10px;
+}
+.input2{
+    margin: 8px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 30%;
+    background-color: #FFF;
+    font-size: 15px;
+    /* color: #2d2d2d; */
+}
+.add_form  .btn.btn-warning{
+    margin: 15px;
+}
+.add_form select{ /*投票分類*/
+    margin: 15px;
+    font-size: 15px;
+    color: #148aa4;
+}
+/*------------------- 後台 & 會員中心 -------------------*/
+.reg_main{ 
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    /* margin: 25px; */
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.reg_header{
+    letter-spacing: 2px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    color: #148aa4;
+}
+.reg_container{
+    display: flex;
+    flex-direction:column;
+    /* background-color: aquamarine; */
+    margin: 10px;
+    /* color: #464646; */
+}
+.reg_container div{
+    margin: 10px;
+    padding-bottom: 5px;
+}
+.input1{ /*input的部分*/
+    margin: 8px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 15px;
+    color: #2d2d2d;
+}

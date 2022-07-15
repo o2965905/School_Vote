@@ -1,0 +1,380 @@
+/* 前台專用的css */
+/*--------------------- Form表單 ---------------------*/
+form{
+    margin: 20px;
+    margin-left: 40px;
+    /* color: #464646; */
+    color: #126e7d;;
+    letter-spacing: 2px;
+    /* font-weight:bold; */
+    font-size: large;
+}
+.footer_page{ /*分頁*/
+    /* height: 28px; */
+    /* line-height: 28px; */
+    line-height: 18px;
+    /* font-size: 12px; */
+    font-size: 15px;
+    color: #464646;
+    padding: 0 8px;
+    margin: 0 10px;
+    text-align: center;
+    /* background-color: lightyellow; */
+    /* border-radius: 4px; */
+    /* border: 1px solid #e0e0e0; */
+}
+.footer_page a{
+    float: none;
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #464646;
+    border: 1px solid #D9D9D9;
+    /* background-color: #e0e0e0; */
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+.footer_page a:hover{
+    background-color: #148aa4;
+    color: #FFFFFF;
+}
+
+/*-------------------- 列表標題列表 --------------------*/
+#date_type{ /*分類按鈕*/
+    /* margin: 15px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+#date_type select{ /*分類按鈕-選項設定*/
+    font-size: 20px;
+    color: #148aa4;
+    border: 1px solid #ccc;
+    border-bottom: 3px solid tomato;
+    border-radius: 3px;
+}
+.title{
+    width: 100%;
+    height: 30px;
+    padding: 4px;
+    /* margin-top: 1%; */
+    display: flex;
+    justify-content: space-evenly;
+    background: #51A1B4;
+    color: #FFF;
+    font-size: 15px;
+    text-align: center;
+}
+.title a{
+    text-decoration: none;
+    color: #FFF;
+}
+.No1{ /*投票主題*/
+    /* border-left: 1px solid rgba(255, 255, 255, 0.15); */
+    width: 50%;
+}
+.No2{ /*剩餘天數*/
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    width: 25%;
+    text-align: center;
+}
+.No3{ /*投票人數*/
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    width: 25%;
+    text-align: center;
+}
+
+/*-------------------- 投票主題呈現 --------------------*/
+ul{
+    margin: 30px 10px 30px 10px;
+}
+ul a{
+    text-decoration: none;
+}
+.font_items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.font_items{ /*投票主題-基數*/
+    max-width: 100%;
+    margin: 1%;
+    /* padding: 10px; */
+    padding: 2.5%;
+    padding-top: 1%;
+    /* padding-left: 3%; */
+    padding-left: 2%;
+    background-color: #f9f9f9;
+    color: #464646;
+    font-weight: bold;
+}
+.font_items:hover{ /*投票主題-hover效果*/
+    background-color: #FFFFDD;
+    /* box-shadow: 10px 10px 10px -5px #ccc; */
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    color: #117096;
+    cursor: pointer;
+}
+
+/*-------------------- 投票內容頁面 --------------------*/
+.vote_content{ /*包覆主題&選項的form表單*/
+    /* background-color:#f9f9f9; */
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    /* border: 1px solid #D9D9D9; */
+    border-radius: 3px;
+    /* box-shadow: 0px 2px 4px rgb(0 0 0 / 33%); */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.vote_subject{ /*投票主題內容*/
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    color: #148aa4;
+    letter-spacing: 2px;
+    /* border-bottom: 1px solid #cccccc; */
+}
+.vote_option{ /*選項文字內容*/
+    margin-left: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #464646;
+}
+.vote_radio{ /*選項的input*/
+    cursor: pointer;
+}
+.vote_btn{ /*投票按鈕*/
+    margin-bottom: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 6px;
+    color: #FFF;
+    /* background-color: #2fa6a0; */
+    background-color: #3e81c6;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.vote_reset{ /*放棄按鈕*/
+    margin-bottom: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 6px;
+    color: #FFF;
+    background-color: #F26262;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.vote_re{ /*重選按鈕*/
+    margin-bottom: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 6px;
+    color: #FFF;
+    background-color: #FF8B2C;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 33%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*-------------------- 投票結果頁面 --------------------*/
+.div_opt{
+    /* margin: 20px 0px; */
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 12%) 0px 6px 6px;
+}
+.div_p{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.div_p1{
+    font-weight: 500;
+    margin: unset;
+    padding: 0px 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+    vertical-align: middle;
+    line-height: inherit;
+    box-sizing: border-box;
+    font-weight: 700;
+    /* color: #464646; */
+}
+.div_p2{
+    font-size: 14px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: 700;
+    margin: unset;
+    padding: 0px 18px 0px 0px;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    line-height: inherit;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.div_bg{
+    position: relative;
+    height: 100%;
+    background: rgb(220, 125, 150);
+    /* background: rgb(220, 125, 125); */
+    /* background-color:rgb(230, 173, 204); */
+    /* background-color: #94c6ce; */
+    /* background-color: rgb(0, 112, 243); */
+    /* background-color: #e6b375; */
+    top: -50px;
+    left: 0px;
+    opacity: 0.5;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/*-------------------- 活動辦法頁面 --------------------*/
+.act_main{
+    width: 100%;
+    padding: 10%;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.act_header{
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #464646;
+}
+.act_container{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aquamarine; */
+    padding: 10px;
+    color: #464646;
+}
+.act_container div{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    border: 5px solid #fff;
+}
+.act_container div img{
+    width: 100%;
+}
+.act_container p{
+    font-family: 'Open Sans', 'sans-serif', "微軟正黑體";
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/*-------------------- 會員登入頁面 --------------------*/
+.log_main{
+    margin-top: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    /* margin: 25%; */
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.log_header{ /*會員登入的字體*/
+    letter-spacing: 2px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    color: #148aa4;
+}
+.log_container{ 
+    display: flex;
+    flex-direction:column;
+    /* background-color: aquamarine; */
+    margin: 10px;
+    /* color: #464646; */
+}
+.log_container div{ /*帳號密碼部分 & 登入註冊按鈕 增加間距*/
+    margin: 10px;
+    padding-bottom: 5px;
+}
+.input1{ /*輸入帳號密碼的部分*/
+    margin: 8px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 15px;
+    color: #2d2d2d;
+}
+.forgot_pw{ /*忘記密碼區塊*/
+    border-top: 1px solid #999999;
+    padding-top: 4px;
+}
+.forgot_pw a{ /*忘記密碼的a連結*/
+    color: #6f6a66;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+/*-------------------- 訪客註冊頁面 --------------------*/
+.reg_main{ 
+    margin-top: 15%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    /* margin: 25px; */
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 33%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.reg_header{
+    letter-spacing: 2px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    color: #148aa4;
+}
+.reg_container{
+    display: flex;
+    flex-direction:column;
+    /* background-color: aquamarine; */
+    margin: 10px;
+    /* color: #464646; */
+}
+.reg_container div{
+    margin: 10px;
+    padding-bottom: 5px;
+}
